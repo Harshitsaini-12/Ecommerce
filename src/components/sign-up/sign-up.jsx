@@ -31,7 +31,8 @@ handleSubmit = async event =>{
      
     try {
     const {user} = await auth.createUserWithEmailAndPassword(
-        email,password
+        email,
+        password
         );
 
     await createUserProfileDocument(user,{displayName});

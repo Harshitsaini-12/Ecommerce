@@ -149,6 +149,21 @@ const SHOP_DATA = {
         name: 'Tan Trench',
         imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
         price: 185
+      },{
+        id: 23,
+        name: 'Navy Blue Crop Jacket',
+        imageUrl: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/7772500/2018/11/21/37dd0fa1-9d18-4bc4-8f60-cb177ad25c151542791714977-STREET-9-Women-Navy-Solid-Crop-Jacket-7211542791714845-1.jpg',
+        price: 170
+      },{
+        id: 24,
+        name: 'Black Floral Coat',
+        imageUrl: 'https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/1/2/120517black_4.jpg?rnd=20200526195200',
+        price: 180
+      },{
+        id: 25,
+        name: 'LOUISIANA PUFFER JACKET',
+        imageUrl: 'https://cdn.shopify.com/s/files/1/0809/9003/products/CHA_662911_1700x1700.png?v=1616480664',
+        price: 200
       }
     ]
   },
@@ -158,48 +173,48 @@ const SHOP_DATA = {
     routeName: 'womens',
     items: [
       {
-        id: 23,
+        id: 26,
         name: 'Blue Tanktop',
         imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
         price: 25
       },
       {
-        id: 24,
+        id: 27,
         name: 'Floral Blouse',
         imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
         price: 20
       },
       {
-        id: 25,
+        id: 28,
         name: 'Floral Dress',
         imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
         price: 80
       },
       {
-        id: 26,
+        id: 29,
         name: 'Red Dots Dress',
         imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
         price: 80
       },
       {
-        id: 27,
+        id: 30,
         name: 'Striped Sweater',
         imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
         price: 45
       },
       {
-        id: 28,
+        id: 31,
         name: 'Yellow Track Suit',
         imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
         price: 135
       },
       {
-        id: 29,
+        id: 32,
         name: 'White Blouse',
         imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
         price: 20
       },{
-        id: 30,
+        id: 33,
         name: 'Peacock Cinched Shirt Jacket',
         imageUrl: 'https://shaye.co.in/media/catalog/product/cache/9d0df6da185847a889b25b0d66162244/a/a/aa03-1.jpg',
         price: 40
@@ -212,47 +227,47 @@ const SHOP_DATA = {
     routeName: 'mens',
     items: [
       {
-        id: 31,
+        id: 34,
         name: 'Camo Down Vest',
         imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
         price: 325
       },
       {
-        id: 32,
+        id: 35,
         name: 'Floral T-shirt',
         imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
         price: 20
       },
       {
-        id: 33,
+        id: 36,
         name: 'Black & White Longsleeve',
         imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
         price: 25
       },
       {
-        id: 34,
+        id: 37,
         name: 'Pink T-shirt',
         imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
         price: 25
       },
       {
-        id: 35,
+        id: 38,
         name: 'Jean Long Sleeve',
         imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
         price: 40
       },
       {
-        id: 36,
+        id: 39,
         name: 'Burgundy T-shirt',
         imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
         price: 25
       },{
-        id:37,
+        id:40,
         name:'one8 x PUMA',
         imageUrl: 'https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/13887180/2021/4/12/7070989a-19db-4ea3-8c7e-b30c2124905d1618209915617-one8-x-PUMA-Men-Tshirts-6621618209914964-3.jpg',
         price:30
       },{
-        id:38,
+        id:41,
         name:'Sun-Baked Shorts',
         imageUrl:'https://usplworld-static.s3.ap-south-1.amazonaws.com/static/img/wrogn/products/product_detail_zoom/WHSH1126/2.jpeg',
         price:45
