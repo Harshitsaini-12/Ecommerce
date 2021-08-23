@@ -5,13 +5,12 @@ import {Route,Switch,Redirect} from 'react-router-dom';
 import ShopPage from '../src/components/pages/shop/shop';
 import Header from './components/header/header';
 import SignInAndSignUpPage from './components/sign-in-and-sign-out/sign-in-sign-out';
-import {auth , createUserProfileDocument} from './firebase/firebase.util';
+import {auth , createUserProfileDocument,addCollectionAndDocuments} from './firebase/firebase.util';
 import {setCurrentUser} from './redux/user/users.section';
 import {connect} from 'react-redux';
 import {selectCurrentUser} from './redux/user/user.selector';
 import {createStructuredSelector} from 'reselect';
 import CheckoutPage from './components/pages/checkout/checkout';
-
 
 class App extends React.Component{
   unsubscribeFromAuth=null;
