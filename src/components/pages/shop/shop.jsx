@@ -1,57 +1,44 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
-import CollectionsOverview from '../../collections-overview/collection-overview';
-import CollectionPage from '../collection/collection';
-import {firestore,convertCollectionsSnapshotToMap} from '../../../firebase/firebase.util';
+
+import CollectionsOverviewContainer from '../../collections-overview/collections-overview-components';
+import CollectionPageContainer from '../collection/collection-component';
+
 import {connect} from 'react-redux';
-import { updateCollections } from '../../../redux/shop/shop.actions';
+import { Route } from 'react-router-dom';
 
-import withSpinner from '../../with-spinner/with-spinner';
-
-const CollectionOverviewWithSpinner =withSpinner(CollectionsOverview);
-const CollectionPageWithSpinner =withSpinner(CollectionPage);
+import { fetchCollectionsStartAsync} from '../../../redux/shop/shop.actions';
 
 
 class ShopPage extends React.Component{
-   state={
-       loading: true
-   };
-
-    unsubscribedFromSnapshot =null;
 
     componentDidMount(){
-        const {updateCollections} =this.props;
-        const collectionRef = firestore.collection('collections');
 
-        this.unsubscribedFromSnapshot = collectionRef.onSnapshot(async snapshot =>{
-            const collectionsMap=convertCollectionsSnapshotToMap(snapshot);
-            updateCollections(collectionsMap);
-            this.setState({loading:false});
-        })
+     const {fetchCollectionsStartAsync}= this.props;
+     fetchCollectionsStartAsync();
+
+    //using simple call as in js
+
+    //  fetch('https://firestore.googleapis.com/v1/projects/crown-db-55159/databases/(default)/documents/collections')
+    //  .then(response => response.json())
+    //  .then(collection => console.log(collection));
     }
 
     render(){
 
-        const {match}=this.props;
-        const {loading}=this.state;
+        const {match} = this.props;
 
         return(
             <div className="shop-page">
-            <Route exact path={`${match.path}`} render={(props => 
-                <CollectionOverviewWithSpinner isLoading={loading} {...props}/>
-            )}/> 
+            <Route exact path={`${match.path}`} component={CollectionsOverviewContainer}/>
             <Route path={`${match.path}/:collectionId`}  
-                render={(props) =>
-                 <CollectionPageWithSpinner isLoading={loading} {...props}/>} />
+                component={CollectionPageContainer} />
            </div>
         )
     } 
-}
+};
 
-
-const mapDispatchToProps =dispatch =>({
-    updateCollections: collectionsMap => 
-      dispatch(updateCollections(collectionsMap))
+const mapDispatchToProps = dispatch =>({
+   fetchCollectionsStartAsync:() => dispatch(fetchCollectionsStartAsync())
 });
 
 
