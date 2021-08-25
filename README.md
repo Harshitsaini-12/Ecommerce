@@ -2,11 +2,13 @@
 -It is a fully responsive website.🛍<br/>
 -It is in building phase still more features to add on like PWA ,some backend part and lot more.<br/>
 
-MOBILE VIEW
-
+MOBILE VIEW 📲
+<br/>
 ![IMG_5790](https://user-images.githubusercontent.com/81574700/130853817-0446f241-d417-4df7-affb-0dc55cdfd934.PNG)
 
-LAPTOP SCREEN VIEW
+LAPTOP SCREEN VIEW 💻<br/>
+<br/>
+<br/>
 <img width="1440" alt="Screenshot 2021-08-26 at 01 08 00" src="https://user-images.githubusercontent.com/81574700/130854067-9b35169b-88b6-4833-8316-cf57edd48d0b.png"><br/>
 
 
