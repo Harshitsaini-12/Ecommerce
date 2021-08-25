@@ -41,7 +41,7 @@ render(){
     return(
         <div className="sign-in">
             <h2>I already have an account</h2>
-            <span>Sign in with your email and password</span>
+            <span>Sign in with your Email and Password</span>
 
          {/* form for the sigin page */}
          <form onSubmit={this.handleSubmit}>
@@ -50,7 +50,7 @@ render(){
          type="email" 
          handlechange={this.handleChange} 
          value={this.state.email} 
-         label='email'
+         label='Email'
          required />
 
          <FormInput
@@ -58,7 +58,7 @@ render(){
          type="password" 
          handlechange={this.handleChange}
          value={this.state.password} 
-         label='password'
+         label='Password'
          required />
         
         <div className="buttons">
