@@ -1,4 +1,4 @@
--This is a Ecommerce clothing website made using react and features like redux and firebase for authentication,stripe API for payment.🛒 <br/>
+-This is a Ecommerce clothing website made using react and features like redux and firebase for authentication,stripe API for payment and deployed using Heroku🛒 <br/>
 -It is a fully responsive website.🛍<br/>
 -It is in building phase still more features to add on like PWA ,some backend part and lot more.<br/>
 
